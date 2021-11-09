@@ -22,7 +22,16 @@ let harryPotterTeam = ["Albus", "Hermione", "Ronald", "Draco", "Neville"];
 let teamA = [];
 let teamH = [];
 
-for (let str of harryPotterTeam) {
+harryPotterTeam.forEach((item) => {
+    if (item.includes(`a`)) {
+        teamA.push(item);
+    }
+    if (item.includes(`H`)) {
+        teamH.push(item);
+    }
+});
+
+/*for (let str of harryPotterTeam) {
     console.log(str);
     if (str.includes(`a`)) {
         teamA.push(str);
@@ -30,7 +39,7 @@ for (let str of harryPotterTeam) {
     if (str.includes(`H`)) {
         teamH.push(str);
     }
-}
+}*/
 console.log(teamA);
 console.log(teamH);
 
